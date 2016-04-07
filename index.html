@@ -2,33 +2,43 @@
 <html>
     <head>
         <Title>Google</Title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
     </head>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <div class = "header"> 
-        
-        <div class = "header_text">
-            TEST
-            <!--<img src=""></img>-->
-        </div>
-    </div>
+
     <body>
-        <div class = "page_body">
+
+        <div class = "header">
+            <ul>
+                <li><a href="https://plus.google.com/">+You</a></li>
+                <li><a href="mail.google.com">Gmail</a></li>
+                <li><a href="images.google.com">Images</a></li>
+                <li><span class = "apps"><img src="images/apps.png"></img></span></li>
+                <li><span class="signin-button"><a href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/">Sign in</a></span></li>
+            </ul>
+        </div>
+
+
+        <div class = "logo">
             <img src="images/test.png"/>
+        </div>
             <div class ="form">
                 
                 <form action = "/yourSearch" method="get">
                     
-                    <div>
-                        
-                        <input type = "text" id = "what" name = "search"/>    
-                    
+                    <div class = "searchBar">
+                        <input type = "text" id = "what" name = "search" value = "Search Google or Type URL"/>    
                     </div>
                 
+                    <div class = "searchButtons">
+                        <input type="submit" value="Google Search">    
+                        <input type="submit" value="I'm Feeling Lucky">    
+                    </div>
+                    
                 </form>
             
             </div>
             
-        </div>
+        
         
     </body>
     
